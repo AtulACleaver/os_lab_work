@@ -49,6 +49,36 @@
       # commands if none of the above conditions are true
   fi
   ```
+- case statements can also be used for multi-way branching
+- Structure of case statement:
+  ```bash
+  case variable in
+      command)
+          # commands for pattern1
+          ;;
+      command2)
+          # commands for pattern2
+          ;;
+      * command)
+          # default commands
+          ;;
+  esac
+  ```
+  - Each pattern ends with `)` and commands end with `;;`
+  - `*` is used as a wildcard for default case
+  - Example:
+  ```bash
+  case $var in
+      1)
+          echo "You selected option 1"
+          ;;
+      2)
+          echo "You selected option 2"
+          ;;
+      *)
+          echo "Invalid option"
+          ;;
+  esac
 
 ## Lab 4: Loops in Shell Scripting
 - `for` loop: Iterate over a list of items
