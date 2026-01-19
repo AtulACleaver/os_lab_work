@@ -14,7 +14,7 @@ read y1
 echo "enter y2: "
 read y2
 
-slope=$(echo "scale=2; ( $y2 - $y1 ) / ( $x2 - $x1 )" | bc)
+slope=`echo "scale=2; ( $y2 - $y1 ) / ( $x2 - $x1 )" | bc`
 echo "Slope = $slope"
 
 

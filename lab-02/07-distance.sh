@@ -9,5 +9,5 @@ read t
 echo "enter accleration: "
 read a
 
-s=$(echo "scale=2; ($u * $t) + 0.5 * $a * $t * $t" | bc)
+s=`echo "scale=2; ($u * $t) + 0.5 * $a * $t * $t" | bc`
 echo "Distance = $s"

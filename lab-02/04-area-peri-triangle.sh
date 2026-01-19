@@ -6,7 +6,7 @@ read base
 echo "Enter height"
 read height
 
-area=$(echo "scale=2; ( $base * $height ) / 2" | bc)
-perimeter=$(echo "scale=2; 2 * ( $base + $height )" | bc)
+area=`echo "scale=2; ( $base * $height ) / 2" | bc`
+perimeter=`echo "scale=2; 2 * ( $base + $height )" | bc`
 
 echo "Area = $area, Perimeter = $perimeter"
