@@ -1,6 +1,7 @@
+#!/bin/bash
 # WASS to print all prime factors of a given number using unitl loop
 
-#!/bin/bash
+
 echo "Enter a number:"
 read num
 factor=2

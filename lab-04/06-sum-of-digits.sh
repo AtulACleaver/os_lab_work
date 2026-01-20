@@ -1,6 +1,8 @@
-# WASS to reverse a number , find sum of digits and check if it is palindrome or not using while loop
-
 #!/bin/bash
+
+# WASS to reverse a number , find sum of digits and check if it is palindrome or not using while loop   
+
+
 echo "Enter a number:"
 read num
 original_num=$num

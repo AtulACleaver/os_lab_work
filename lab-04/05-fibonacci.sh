@@ -1,6 +1,8 @@
+#!/bin/bash
+
 # WASS to print Fibonacci series up to n terms using while loop
 
-#!/bin/bash
+
 echo "Enter the number of terms:"
 read n
 a=0

@@ -1,6 +1,7 @@
+#!/bin/bash
+
 # WASS to check prime number using while loop
 
-#!/bin/bash
 
 echo "Enter a number:"
 read num
