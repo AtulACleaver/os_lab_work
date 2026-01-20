@@ -6,11 +6,11 @@ echo "Enter a number:"
 read num
 factor=2
 
-until [ $num -le 1 ]
+until [ $num -eq 1 ]
 do
     if test `expr $num % $factor` -eq 0
     then
-        echo "Prime Factor: $factor"
+        echo "$factor"
         num=`expr $num / $factor`
     else
         factor=`expr $factor + 1`

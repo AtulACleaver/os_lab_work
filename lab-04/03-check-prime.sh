@@ -9,7 +9,7 @@ is_prime=1
 
 i=2
 # while loop with sqrt calculation using expr
-while [ $i -le `` expr $num ** 0.5`` ]
+while [ $i -le `expr $num / $i` ]
 do
     if test `expr $num % $i` -eq 0
     then

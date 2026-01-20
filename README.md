@@ -3,6 +3,7 @@
 # OS Lab Notes
 
 ## Lab 1: Basic Linux Commands
+
 - `ls` : List files and directories
 - `cd` : Change directory
 - `pwd` : Print working directory
@@ -18,6 +19,7 @@
 - `tree` : Display directory structure in a tree format
 
 ## Lab 2: Shell Scripting Basics
+
 - Shebang (`#!/bin/bash`) : Indicates the script should be run in the bash shell
 - Preferred way to solve arithmetic expressions: 
   - **use either `expr` integer arithmetic or `bc` for floating point arithmetic**
@@ -33,11 +35,14 @@
 - Reading user input: `read variable_name`
 
 ## Lab 3: Conditional Statements in Shell Scripting
+
 - `if`, `elif`, `else` statements for conditional execution
 - Use `test` command is preferred, **avoid** `[ ]` for condition evaluation
 - String comparison: `=` for equality, `!=` for inequality
 - Numeric comparison: `-eq`, `-ne`, `-lt`, `-le`, `-gt`, `-ge`
+
 - Example structure:
+
   ```bash
   if test condition1
   then
@@ -49,8 +54,10 @@
       # commands if none of the above conditions are true
   fi
   ```
+
 - case statements can also be used for multi-way branching
 - Structure of case statement:
+
   ```bash
   case variable in
       command)
@@ -64,9 +71,11 @@
           ;;
   esac
   ```
+
   - Each pattern ends with `)` and commands end with `;;`
   - `*` is used as a wildcard for default case
   - Example:
+
   ```bash
   case $var in
       1)
@@ -81,10 +90,12 @@
   esac
 
 ## Lab 4: Loops in Shell Scripting
+
 - `for` loop: Iterate over a list of items
 - `while` loop: Execute commands as long as a condition is true
 - `until` loop: Execute commands until a condition becomes true
 - Example `for` loop:
+
      ```bash
   for item in list
   do
@@ -92,13 +103,16 @@
   done
   ```
 - Example `while` loop:
+
   ```bash
   while test condition
   do
       # commands to execute while condition is true
   done
   ```
+
 - Example `until` loop:
+
   ```bash
   until test condition
   do
