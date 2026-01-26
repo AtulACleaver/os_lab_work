@@ -2,16 +2,26 @@
 
 # sort all numbers entered by user in descending order
 
-echo "Enter the numbers separated by space:"
-read -a numbers
+echo "Enter total number of elements:"
+read n
 
-n=${#numbers[@]}
+i=1
+echo "Enter Elements:"
 
-for (( i = 0; i < n; i++ ))
+while [ $i -le $n ]
 do
-    for (( j = i + 1; j < n; j++ ))
+    echo "Enter number $i:"
+    read numbers[$i]
+    i=`expr $i + 1`
+done
+
+echo "Numbers in Descending Order:"
+
+for (( i = 1; i <= n; i++ ))
+do
+    for (( j = i + 1; j <= n; j++ ))
     do
-        if (( numbers[i] < numbers[j] ))
+        if [ ${numbers[i]} -lt ${numbers[j]} ]
         then
             temp=${numbers[i]}
             numbers[i]=${numbers[j]}
@@ -19,8 +29,8 @@ do
         fi
     done
 done
-echo "Numbers in descending order:"
-for num in "${numbers[@]}"
+
+for (( i = 1; i <= n; i++ ))
 do
-    echo "$num"
+    echo "${numbers[i]}"
 done
