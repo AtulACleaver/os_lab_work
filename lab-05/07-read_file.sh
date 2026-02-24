@@ -17,3 +17,11 @@ else
     echo "File '$filename' does not exist."
 fi  
 
+# Sample Output:
+# Enter the file name:
+# myfile.txt
+# 1: This is the first line.
+# 2: This is the second line.
+# 3: This is the third line.
+# Or if file does not exist:
+# File 'myfile.txt' does not exist.

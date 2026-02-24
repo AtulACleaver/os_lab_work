@@ -23,7 +23,7 @@ do
     do
         if [ ${numbers[i]} -lt ${numbers[j]} ]
         then
-            temp=${numbers[i]}
+            temp=${numbers[i]}-
             numbers[i]=${numbers[j]}
             numbers[j]=$temp
         fi
